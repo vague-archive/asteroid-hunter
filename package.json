@@ -1,0 +1,20 @@
+{
+  "name": "asteroid-hunter",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "src/main.ts",
+  "scripts": {
+    "build": "bun scripts/codegen.ts && bun scripts/build.ts",
+    "dev": "bun scripts/watcher.ts",
+    "biome:write": "biome check ./src --write"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/bun": "1.2.10",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@vaguevoid/fiasco": "0.8.15"
+  }
+}
